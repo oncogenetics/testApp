@@ -7,6 +7,9 @@
 #    http://shiny.rstudio.com/
 #
 
+#trying to error the app
+x
+
 library(shiny)
 
 # Define server logic required to draw a histogram
