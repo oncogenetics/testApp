@@ -7,15 +7,15 @@
 #    http://shiny.rstudio.com/
 #
 
-#trying to error the app
-x
-
 library(shiny)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output, session) {
 
     output$distPlot <- renderPlot({
+        
+        #trying to error app
+        x <- foo()
 
         # generate bins based on input$bins from ui.R
         x    <- faithful[, 2]
