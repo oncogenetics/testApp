@@ -15,7 +15,7 @@ shinyServer(function(input, output, session) {
     output$distPlot <- renderPlot({
         
         #trying to error app
-        x <- foo()
+        #x <- foo()
 
         # generate bins based on input$bins from ui.R
         x    <- faithful[, 2]

@@ -12,3 +12,6 @@ library("pals")
 library("knitr")
 library("readxl")
 library("iCARE")
+
+library("testingAppError")
+
