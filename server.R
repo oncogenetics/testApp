@@ -10,7 +10,7 @@
 library(shiny)
 
 # Define server logic required to draw a histogram
-shinyServer(function(input, output) {
+shinyServer(function(input, output, session) {
 
     output$distPlot <- renderPlot({
 
@@ -21,6 +21,10 @@ shinyServer(function(input, output) {
         # draw the histogram with the specified number of bins
         hist(x, breaks = bins, col = 'darkgray', border = 'white')
 
+    })
+    
+    observeEvent(input$error, {
+        stop()
     })
 
 })
